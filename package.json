@@ -1,0 +1,23 @@
+{
+  "name": "gulp-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatashaFedorova/gulp-example.git"
+  },
+  "author": "NatashaFedorova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatashaFedorova/gulp-example/issues"
+  },
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2"
+  }
+}
