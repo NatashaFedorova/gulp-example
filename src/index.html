@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+  @@include('html/head.html', { "title": "Home" })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <h1>Home</h1>
+      <h2>I`m main</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ea
+        quisquam, quae nemo praesentium accusantium quibusdam adipisci ut esse
+        voluptate nihil animi quas mollitia ullam ex. Placeat harum alias
+        veniam!
+      </p>
+      <img src="@img/1.jpg" alt="spider" width="1200" height="675" />
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

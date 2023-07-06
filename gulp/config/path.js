@@ -9,15 +9,21 @@ const srcFolder = './src';
 export const path = {
   build: {
     html: `${buildFolder}/`,
+    img: `${buildFolder}/img/`,
+    css: `${buildFolder}/css/`,
     files: `${buildFolder}/files/`, //шлях по якому переносяться папки з результатом
   },
 
   src: {
     html: `${srcFolder}/*.html`, // в папці src
+    img: `${srcFolder}/img/**/*.*`,
+    scss: `${srcFolder}/scss/style.scss`,
     files: `${srcFolder}/files/**/*.*`, //запис означає, що нас цікавлять всі папки та файли, з будь-яким розширенням, в папці files (що в папці src)
   }, // об'єкт шляхів вихідних файлів
   watch: {
     html: `${srcFolder}/**/*.html`, // в папці src та в папках вкладених в папці src
+    img: `${srcFolder}/img/**/*.*`,
+    scss: `${srcFolder}/scss/style.scss`,
     files: `${srcFolder}/files/**/*.*`, //запис означає, що нас цікавлять всі папки та файли, з будь-яким розширенням, в папці files (що в папці src)
   }, // шляхи до файлів (папок), за якими має слідкувати gulp та при змінах виконувати певні дії
   clean: buildFolder,
