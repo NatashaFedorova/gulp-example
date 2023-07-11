@@ -15,23 +15,25 @@ export const path = {
     images: `${buildFolder}/img/`,
     files: `${buildFolder}/files/`, //шлях по якому переносяться папки з результатом
   },
-
+  // об'єкт шляхів вихідних файлів
   src: {
     js: `${srcFolder}/js/app.js`,
     html: `${srcFolder}/*.html`, // в папці src
     scss: `${srcFolder}/scss/style.scss`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/img/**/*.svg`,
+    svgIcons: `${srcFolder}/svgIcons/*.svg`,
     files: `${srcFolder}/files/**/*.*`, //запис означає, що нас цікавлять всі папки та файли, з будь-яким розширенням, в папці files (що в папці src)
-  }, // об'єкт шляхів вихідних файлів
-
+  },
+  // шляхи до файлів (папок), за якими має слідкувати gulp та при змінах виконувати певні дії
   watch: {
     js: `${srcFolder}/js/**/*.js`,
     html: `${srcFolder}/**/*.html`, // в папці src та в папках вкладених в папці src
     scss: `${srcFolder}/scss/style.scss`,
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
     files: `${srcFolder}/files/**/*.*`, //запис означає, що нас цікавлять всі папки та файли, з будь-яким розширенням, в папці files (що в папці src)
-  }, // шляхи до файлів (папок), за якими має слідкувати gulp та при змінах виконувати певні дії
+  },
+
   clean: buildFolder,
   buildFolder: buildFolder,
   srcFolder: srcFolder,

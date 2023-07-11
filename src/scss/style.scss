@@ -15,3 +15,15 @@ body {
 main {
   background: url('@img/image-1.png') 0 0 no-repeat;
 }
+
+.svg-decor-element-dims {
+  width: 120px;
+  height: 109px;
+  stroke: #d41f0b;
+}
+
+.bg-icon-box {
+  width: 200px;
+  height: 200px;
+  background: url('@img/icons/icons.svg#search') 0 0 no-repeat;
+}
