@@ -2,6 +2,7 @@ import replace from 'gulp-replace'; // пошук та заміна
 import plumber from 'gulp-plumber'; // обробка помилок
 import notify from 'gulp-notify'; // повідомлення-підсказки
 import browserSync from 'browser-sync'; // локальний сервер
+import newer from 'gulp-newer'; // перевірка оновлення
 
 // експортуємо об'єкт
 export const plugins = {
@@ -9,4 +10,5 @@ export const plugins = {
   plumber: plumber,
   notify: notify,
   browserSync: browserSync,
+  newer: newer,
 };

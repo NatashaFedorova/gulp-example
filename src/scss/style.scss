@@ -1,31 +1,17 @@
+@import 'fonts';
 body {
-  background: url('@img/1.jpg') 0 0 no-repeat;
-
-  h1 {
-    color: aqua;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 768px) {
-  p {
-    color: #d4c70b;
-  }
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  background-color: red;
+  color: #d4c70b;
 }
 
 @media (min-width: 1200px) {
   body {
-    background-color: #000;
-  }
-}
-
-@media (min-width: 1200px) {
-  p {
+    background-color: #000000;
     color: #ffffff;
   }
+}
+main {
+  background: url('@img/image-1.png') 0 0 no-repeat;
 }
