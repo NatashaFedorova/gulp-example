@@ -4,13 +4,14 @@
   "description": "",
   "main": "gulpfile.js",
   "type": "module",
+  "homepage": "https://NatashaFedorova.github.io/gulp-example/",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build",
-    "ghPages": "gulp deploy",
-    "svgSprive": "gulp svgSprive"
+    "svgSprive": "gulp svgSprive",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "del": "^7.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -52,8 +54,5 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.88.1",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "gulp-gh-pages": "^0.5.4"
   }
 }
