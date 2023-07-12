@@ -4,26 +4,24 @@
   <body>
     @@include('html/header.html', {})
     <main>
-      <h1>Home</h1>
-      <img src="@img/spider-img.jpg" alt="spider" width="350" />
+      <div class="title-box"><h1>Spider</h1></div>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ea
         quisquam, quae nemo praesentium accusantium quibusdam adipisci ut esse
         voluptate nihil animi quas mollitia ullam ex. Placeat harum alias
         veniam!
       </p>
-      <button>
+      <button class="btn">
         <div class="icon-box">
           <img
-            src="@img/icons/icons.svg#decor-element"
+            src="@img/icons/icons.svg#pinterest"
             alt="decor-element"
             width="40"
             height="40"
           />
         </div>
-        With img
       </button>
-      <button>
+      <button class="btn">
         <div class="icon-box">
           <svg class="svg-decor-element-dims" alt="decor-element">
             <use
@@ -34,9 +32,10 @@
           </svg>
         </div>
       </button>
-      <div class="bg-icon-box"></div>
     </main>
     @@include('html/footer.html', {})
     <script src="js/app.min.js"></script>
   </body>
 </html>
+
+<!-- приклад <img src="@img/spider-img.jpg" alt="spider" width="350" /> -->

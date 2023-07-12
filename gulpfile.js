@@ -45,7 +45,7 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 // паралельний сценарій
 const mainTasks = gulp.series(
   fonts,
-  gulp.parallel(copy, html, scss, js, images)
+  gulp.parallel(copy, html, scss, js, images, svgSprive)
 );
 
 // сценарій виконання завдань

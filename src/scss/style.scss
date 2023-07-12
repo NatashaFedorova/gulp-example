@@ -1,3 +1,6 @@
+// приклад
+// background: url('@img/icons/icons.svg#decor-element') -1px 0 no-repeat;
+
 @import 'fonts';
 body {
   font-family: 'Montserrat', sans-serif;
@@ -12,18 +15,25 @@ body {
     color: #ffffff;
   }
 }
-main {
-  background: url('@img/image-1.png') 0 0 no-repeat;
+
+.title-box {
+  width: 1200px;
+  height: 675px;
+  background: url('@img/spider-img.jpg') 0 0 no-repeat;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffffff;
 }
 
 .svg-decor-element-dims {
-  width: 120px;
-  height: 109px;
-  stroke: #d41f0b;
-}
-
-.bg-icon-box {
-  width: 200px;
-  height: 200px;
-  background: url('@img/icons/icons.svg#search') 0 0 no-repeat;
+  width: 40px;
+  height: 40px;
+  stroke: #ffffff;
 }
