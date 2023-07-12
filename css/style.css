@@ -29,19 +29,28 @@ body {
   color: #d4c70b;
 }
 
-.no-webp main {
-  background: url("../img/image-1.png") 0 0 no-repeat; }
+.no-webp .title-box {
+  background: url("../img/spider-img.jpg") 0 0 no-repeat; }
 
-.svg-decor-element-dims {
-  width: 120px;
-  height: 109px;
-  stroke: #d41f0b;
+.title-box {
+  width: 1200px;
+  height: 675px;
 }
 
-.bg-icon-box {
-  width: 200px;
-  height: 200px;
-  background: url("../img/icons/icons.svg#search") 0 0 no-repeat;
+.title-box h1 {
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+.svg-decor-element-dims {
+  width: 40px;
+  height: 40px;
+  stroke: #ffffff;
 }
 
 @media (min-width: 1200px) {
@@ -51,4 +60,4 @@ body {
   }
 }
 
-.webp main { background: url(../img/image-1.webp) 0 0 no-repeat; }
+.webp .title-box { background: url(../img/spider-img.webp) 0 0 no-repeat; }
